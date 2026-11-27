@@ -1,0 +1,9 @@
+{
+  "name": "indos-referent",
+  "version": "0.1.0",
+  "description": "Le rôle de référent d'AVQN : la méthode d'accompagnement, du premier contact à la fin de la relation, ses modèles et ses skills.",
+  "author": {
+    "name": "AVQN"
+  },
+  "dependencies": ["indos-poste"]
+}

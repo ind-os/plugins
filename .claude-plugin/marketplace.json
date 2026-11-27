@@ -1,0 +1,31 @@
+{
+  "name": "indos",
+  "owner": {
+    "name": "AVQN"
+  },
+  "metadata": {
+    "description": "Les rôles du travail sur Indos et les OS des entreprises, un plugin par rôle."
+  },
+  "plugins": [
+    {
+      "name": "indos-os",
+      "source": "./indos-os",
+      "description": "Travailler sur le dépôt de l'OS d'une entreprise : ses apps, ses chantiers, sa recette et son déploiement."
+    },
+    {
+      "name": "indos-poste",
+      "source": "./indos-poste",
+      "description": "Le poste d'un membre de l'équipe d'AVQN : ses entreprises, leurs dépôts et leur projet, et l'accompagnement dans le kDrive."
+    },
+    {
+      "name": "indos-developpeur",
+      "source": "./indos-developpeur",
+      "description": "Le rôle de développeur d'AVQN : développer les OS des entreprises confiées et les mettre à jour depuis Indos."
+    },
+    {
+      "name": "indos-referent",
+      "source": "./indos-referent",
+      "description": "Le rôle de référent d'AVQN : la méthode d'accompagnement, ses modèles et ses skills."
+    }
+  ]
+}

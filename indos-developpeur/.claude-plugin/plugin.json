@@ -1,0 +1,9 @@
+{
+  "name": "indos-developpeur",
+  "version": "0.2.0",
+  "description": "Le rôle de développeur d'AVQN : développer les OS des entreprises qui lui sont confiées et les mettre à jour depuis Indos.",
+  "author": {
+    "name": "AVQN"
+  },
+  "dependencies": ["indos-os", "indos-poste"]
+}

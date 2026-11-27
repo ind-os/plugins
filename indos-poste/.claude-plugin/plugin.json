@@ -1,0 +1,8 @@
+{
+  "name": "indos-poste",
+  "version": "0.1.0",
+  "description": "Le poste d'un membre de l'équipe d'AVQN : ses entreprises, chacune avec ses dépôts et son projet, le lien vers l'accompagnement dans le kDrive, et la personne du poste.",
+  "author": {
+    "name": "AVQN"
+  }
+}
