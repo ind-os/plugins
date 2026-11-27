@@ -1,6 +1,6 @@
 {
   "name": "indos-os",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Travailler sur le dépôt de l'OS d'une entreprise : ses apps, ses chantiers, sa recette et son déploiement, selon la méthode de développement d'Indos.",
   "author": {
     "name": "AVQN"

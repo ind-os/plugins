@@ -1,6 +1,6 @@
 # La taille d'un chantier
 
-La taille d'un chantier, S, M ou L, mesure le travail qu'il demande. Ce document en fixe les critères ; l'entreprise les règle comme elle l'entend. La méthode de développement, `methode.md`, à côté de ce document, s'y réfère pour estimer un chantier au plan et confirmer sa taille à la préparation.
+La taille d'un chantier, S, M ou L, mesure le travail qu'il demande. Ce document en fixe les critères. La méthode de développement, `methode.md`, à côté de ce document, s'y réfère pour estimer un chantier au plan et confirmer sa taille à la préparation.
 
 ## La base : ce que le chantier construit
 
