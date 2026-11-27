@@ -1,6 +1,6 @@
 # La méthode de développement
 
-La méthode de développement réunit les étapes et les consignes que suit l'IA pour faire évoluer l'OS. L'entreprise la fait évoluer comme elle l'entend. L'IA la lit avant de changer le dépôt de l'OS. Les mots sont ceux de `docs/lexique.md` du dépôt de l'OS.
+La méthode de développement réunit les étapes et les consignes que suit l'IA pour faire évoluer l'OS. Elle est celle du plugin `indos-os`, qu'AVQN maintient ; l'entreprise l'enrichit de ses propres skills, à la section « Les skills de l'entreprise ». L'IA la lit avant de changer le dépôt de l'OS. Les mots sont ceux de `docs/lexique.md` du dépôt de l'OS.
 
 La méthode guide le développement. Ce que l'entreprise achète ou vend se décide ailleurs : rien dans le projet GitHub ne fait foi pour un contrat. Une phase, une taille ou un ordre sont des repères pour travailler.
 
@@ -16,11 +16,22 @@ La méthode guide le développement. Ce que l'entreprise achète ou vend se déc
 
 Ce qui n'est dans aucun chantier ne se développe pas. Les chantiers se font l'un après l'autre : la méthode le conseille, sans l'imposer. Une fusion dans `main` avant la fin d'un chantier se fait sur la décision de l'utilisateur.
 
-Un changement des textes pour qui travaille sur le dépôt se fait sans chantier : `docs/`, un `README.md`, un `CLAUDE.md`, une skill. Aucun ne fait reconstruire une image, et rien ne se déploie. C'est une pull request, que l'utilisateur relit avant sa fusion.
+Un changement des textes pour qui travaille sur le dépôt se fait sans chantier : `docs/`, un `README.md`, un `CLAUDE.md`, une skill de l'entreprise. Aucun ne fait reconstruire une image, et rien ne se déploie. C'est une pull request, que l'utilisateur relit avant sa fusion.
 
 Un concept nouveau prend le mot que le métier emploie, en français, et entre dans `docs/lexique.md` du dépôt de l'OS.
 
 Les dossiers que nomme `verrou.json` sont maintenus par AVQN : l'IA ne les écrit pas.
+
+## Les skills de l'entreprise
+
+La méthode et les skills du plugin `indos-os` sont la base commune à tous les OS. L'entreprise les enrichit de ses propres skills, pour les gestes qui lui sont propres, comme préparer une saison ou ouvrir un nouveau site.
+
+- Une skill de l'entreprise se range dans `.claude/skills/<nom>/SKILL.md` du dépôt de son OS, hors du verrou : une mise à jour d'Indos n'y touche pas.
+- Elle s'appuie sur les skills du plugin, qu'elle nomme avec leur préfixe, comme `indos-os:preparer-un-chantier`, plutôt que de refaire leurs gestes. Son nom dit ce qu'elle fait, et diffère de ceux du plugin.
+- Elle suit la méthode, sans la contredire. Une entreprise qui veut changer la méthode elle-même le propose à AVQN, par une pull request sur `ind-os/plugins`.
+- Elle se change comme un texte, sans chantier : une pull request, que l'utilisateur relit avant sa fusion.
+
+Par exemple, la skill `preparer-la-saison` d'un théâtre réunit les besoins de la saison avec l'utilisateur, puis suit `indos-os:planifier-les-chantiers` pour les placer au plan, et `indos-os:preparer-un-chantier` pour le premier.
 
 ## Le projet GitHub de l'OS
 

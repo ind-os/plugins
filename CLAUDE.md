@@ -13,6 +13,7 @@ Ce dépôt est le marketplace `indos` : les plugins Claude Code d'Indos, un par 
 
 - Les consignes du plugin sont dans `consignes.md`. Son hook de début de session les donne à l'IA, avec `{poste}` (le chemin du poste), `{plugin}` (celui du plugin) et `{personne}` (la personne de `poste.json`) remplacés. Une consigne dit une règle du rôle, et renvoie à la méthode pour le reste.
 - Un hook ne dit rien hors de ce qui le concerne : hors d'un poste pour les plugins de l'équipe, hors d'un dépôt d'OS pour `indos-os`. Les plugins sont activés pour tout le compte.
+- Les skills d'`indos-os` sont la base qu'enrichissent les skills des entreprises, dans le `.claude/skills/` de leur dépôt : chacune fait un geste net, sous un nom stable, pour qu'une skill d'entreprise la suive par ce nom. Un renommage ou un geste retiré casse les skills des entreprises, et se fait comme un remplacement : la nouvelle skill d'abord, l'ancienne une fois les entreprises prévenues.
 - Une skill dit les gestes et leurs vérifications, et renvoie à la méthode pour les règles. Un fichier du plugin s'y écrit `${CLAUDE_PLUGIN_ROOT}/…`, un dossier du poste par son chemin depuis le poste, comme `accompagnement/Entreprises/<entreprise>/`.
 - Un hook est en TypeScript, lancé par Node 24 sans construction (`node fichier.ts`) : 2 espaces, des fonctions déclarées, des commentaires en français, aucune dépendance.
 
